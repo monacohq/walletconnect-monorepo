@@ -118,12 +118,13 @@ export default function WalletConnectProvider({
     const connectionUrl = `${formatWalletServiceUrl(walletService)}/wc?uri=${encodeURIComponent(
       uri
     )}${maybeRedirectUrl}`;
-
-    if (await Linking.canOpenURL(connectionUrl)) {
-      return Promise.all([
+    let url = await Linking.canOpenURL(connectionUrl)
+    if (url) {
+      await Promise.all([
         storage.setItem(walletServiceStorageKey, walletService),
         Linking.openURL(connectionUrl),
-      ]) && undefined;
+      ])
+      return Promise.resolve();
     }
     return Promise.reject(new Error('Unable to open url.'));
   }, [walletServiceStorageKey, storage, redirectUrl, state]);

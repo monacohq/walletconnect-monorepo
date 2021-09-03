@@ -27,10 +27,10 @@ export default function useMobileRegistry(): State {
           error: undefined,
           loading: false,
         });
-      } catch (error) {
+      } catch (error: unknown) {
         // eslint-disable-next-line no-console
-        console.error(error);
-        setState({ ...defaultState, error, loading: false });
+        console.error(error as Error);
+        setState({ ...defaultState, error: error as Error, loading: false });
       }
     })();
   }, [setState]);

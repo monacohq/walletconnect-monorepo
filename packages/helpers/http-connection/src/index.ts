@@ -66,8 +66,8 @@ class HTTPConnection extends EventEmitter {
           try {
             const response = JSON.parse(xhr.responseText);
             res(response.error, response.result);
-          } catch (e) {
-            res(e);
+          } catch (e: unknown) {
+            res(e as IError);
           }
         }
       };
