@@ -1,4 +1,4 @@
-import WalletConnect from "@walletconnect/client";
+import WalletConnect from "@defilink/client";
 import { IWalletConnectOptions } from "@walletconnect/types";
 import { ReactNativeStorageOptions } from "keyvaluestorage";
 

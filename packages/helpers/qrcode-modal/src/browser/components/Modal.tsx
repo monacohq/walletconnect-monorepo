@@ -13,7 +13,7 @@ import {
   getMobileLinkRegistry,
   getWalletRegistryUrl,
   formatMobileRegistry,
-} from "@walletconnect/browser-utils";
+} from "@defilink/browser-utils";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Header from "./Header";

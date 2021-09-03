@@ -1,1 +1,1 @@
-declare module "@walletconnect/browser-utils";
+declare module "@defilink/browser-utils";

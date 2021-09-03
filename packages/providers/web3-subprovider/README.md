@@ -9,7 +9,7 @@ For more details, read the [documentation](https://docs.walletconnect.org)
 ```javascript
 import Web3 from "web3";
 import ProviderEngine from "web3-provider-engine";
-import WalletConnectSubprovider from "@walletconnect/web3-subprovider";
+import WalletConnectSubprovider from "@defilink/web3-subprovider";
 
 const engine = new ProviderEngine();
 

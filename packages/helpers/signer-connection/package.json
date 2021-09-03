@@ -1,5 +1,5 @@
 {
-  "name": "@walletconnect/signer-connection",
+  "name": "@defilink/signer-connection",
   "version": "1.6.5",
   "description": "Signer Connection for WalletConnect Providers",
   "scripts": {
@@ -61,10 +61,10 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@walletconnect/client": "^1.6.5",
+    "@defilink/client": "^1.6.5",
     "@walletconnect/jsonrpc-types": "^1.0.0",
     "@walletconnect/jsonrpc-utils": "^1.0.0",
-    "@walletconnect/qrcode-modal": "^1.6.5",
+    "@defilink/qrcode-modal": "^1.6.5",
     "@walletconnect/types": "^1.6.5",
     "eventemitter3": "4.0.7"
   },

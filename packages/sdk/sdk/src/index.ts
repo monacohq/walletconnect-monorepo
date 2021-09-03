@@ -1,7 +1,7 @@
-import WalletConnect from "@walletconnect/client";
-import QRCodeModal from "@walletconnect/qrcode-modal";
-import Web3Provider from "@walletconnect/web3-provider";
-import { isNode } from "@walletconnect/utils";
+import WalletConnect from "@defilink/client";
+import QRCodeModal from "@defilink/qrcode-modal";
+import Web3Provider from "@defilink/web3-provider";
+import { isNode } from "@defilink/utils";
 import {
   IWalletConnectSDKOptions,
   IConnector,

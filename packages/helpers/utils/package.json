@@ -1,5 +1,5 @@
 {
-  "name": "@walletconnect/utils",
+  "name": "@defilink/utils",
   "version": "1.6.5",
   "description": "Utility Library for WalletConnect",
   "scripts": {
@@ -62,7 +62,7 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@walletconnect/browser-utils": "^1.6.5",
+    "@defilink/browser-utils": "^1.6.5",
     "@walletconnect/encoding": "^1.0.0",
     "@walletconnect/jsonrpc-utils": "^1.0.0",
     "@walletconnect/types": "^1.6.5",

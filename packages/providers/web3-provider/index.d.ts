@@ -1,1 +1,1 @@
-declare module "@walletconnect/web3-provider"
+declare module "@defilink/web3-provider"

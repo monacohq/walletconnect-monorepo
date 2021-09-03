@@ -4,7 +4,7 @@ import {
   isJsonRpcResponseError,
   isInternalEvent,
   isReservedEvent,
-} from "@walletconnect/utils";
+} from "@defilink/utils";
 import {
   IInternalEvent,
   IJsonRpcResponseSuccess,

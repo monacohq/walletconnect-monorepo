@@ -1,4 +1,4 @@
-import WalletConnect from "@walletconnect/client";
+import WalletConnect from "@defilink/client";
 import * as React from "react";
 
 import useWalletConnectContext from "./useWalletConnectContext";

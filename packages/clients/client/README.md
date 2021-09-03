@@ -7,16 +7,16 @@ For more details, read the [documentation](https://docs.walletconnect.org)
 ## Install
 
 ```bash
-yarn add @walletconnect/client
+yarn add @defilink/client
 # OR
 
-npm install --save @walletconnect/client
+npm install --save @defilink/client
 ```
 
 ## Initiate Connection
 
 ```javascript
-import WalletConnect from "@walletconnect/client";
+import WalletConnect from "@defilink/client";
 
 // Create a connector
 const connector = new WalletConnect({
@@ -247,7 +247,7 @@ connector
 
 ```js
 import WalletConnect from "@walletconnect/browser";
-import WalletConnectQRCodeModal from "@walletconnect/qrcode-modal";
+import WalletConnectQRCodeModal from "@defilink/qrcode-modal";
 
 // Create a connector
 const connector = new WalletConnect();

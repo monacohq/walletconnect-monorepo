@@ -1,7 +1,7 @@
 import EventEmitter from "eventemitter3";
 import { XMLHttpRequest } from "xhr2-cookies";
 import { IError } from "@walletconnect/types";
-import { getFromWindow } from "@walletconnect/utils";
+import { getFromWindow } from "@defilink/utils";
 
 // -- global -------------------------------------------------------------- //
 

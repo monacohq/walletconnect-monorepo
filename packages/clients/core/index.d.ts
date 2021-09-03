@@ -1,1 +1,1 @@
-declare module "@walletconnect/core"
+declare module "@defilink/core"

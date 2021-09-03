@@ -1,7 +1,7 @@
-import WalletConnect from "@walletconnect/client";
-import QRCodeModal from "@walletconnect/qrcode-modal";
-import HttpConnection from "@walletconnect/http-connection";
-import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "@walletconnect/utils";
+import WalletConnect from "@defilink/client";
+import QRCodeModal from "@defilink/qrcode-modal";
+import HttpConnection from "@defilink/http-connection";
+import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "@defilink/utils";
 import {
   IRPCMap,
   IConnector,

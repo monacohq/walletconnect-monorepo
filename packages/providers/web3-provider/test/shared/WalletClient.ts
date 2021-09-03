@@ -1,5 +1,5 @@
 import { ethers, utils } from "ethers";
-import WalletConnect from "@walletconnect/client";
+import WalletConnect from "@defilink/client";
 import { IConnector } from "@walletconnect/types";
 
 export interface WalletClientOpts {

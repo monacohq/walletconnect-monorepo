@@ -1,6 +1,6 @@
 import EventEmitter from "eventemitter3";
-import WalletConnect from "@walletconnect/client";
-import QRCodeModal from "@walletconnect/qrcode-modal";
+import WalletConnect from "@defilink/client";
+import QRCodeModal from "@defilink/qrcode-modal";
 import { IJsonRpcConnection, JsonRpcError, JsonRpcResponse } from "@walletconnect/jsonrpc-types";
 import { formatJsonRpcError } from "@walletconnect/jsonrpc-utils";
 import {

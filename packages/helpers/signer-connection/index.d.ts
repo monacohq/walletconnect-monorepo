@@ -1,1 +1,1 @@
-declare module "@walletconnect/signer-connection";
+declare module "@defilink/signer-connection";

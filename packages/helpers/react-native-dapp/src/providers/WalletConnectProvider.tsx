@@ -1,4 +1,4 @@
-import WalletConnect from '@walletconnect/client';
+import WalletConnect from '@defilink/client';
 import { ICreateSessionOptions, IWalletConnectSession } from '@walletconnect/types';
 import deepmerge from 'deepmerge';
 import { KeyValueStorage, ReactNativeStorageOptions } from 'keyvaluestorage';

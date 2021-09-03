@@ -1,5 +1,5 @@
 {
-  "name": "@walletconnect/ethereum-provider",
+  "name": "@defilink/ethereum-provider",
   "version": "1.6.5",
   "description": "Ethereum Provider for WalletConnect",
   "scripts": {
@@ -63,12 +63,12 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@walletconnect/client": "^1.6.5",
+    "@defilink/client": "^1.6.5",
     "@walletconnect/jsonrpc-http-connection": "^1.0.0",
     "@walletconnect/jsonrpc-provider": "^1.0.0",
-    "@walletconnect/signer-connection": "^1.6.5",
+    "@defilink/signer-connection": "^1.6.5",
     "@walletconnect/types": "^1.6.5",
-    "@walletconnect/utils": "^1.6.5",
+    "@defilink/utils": "^1.6.5",
     "eip1193-provider": "1.0.1",
     "eventemitter3": "4.0.7"
   },

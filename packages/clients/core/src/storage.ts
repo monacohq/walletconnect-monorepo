@@ -1,5 +1,5 @@
 import { IWalletConnectSession } from "@walletconnect/types";
-import { isWalletConnectSession, getLocal, setLocal, removeLocal } from "@walletconnect/utils";
+import { isWalletConnectSession, getLocal, setLocal, removeLocal } from "@defilink/utils";
 
 class SessionStorage {
   constructor(public storageId: string = "walletconnect") {}

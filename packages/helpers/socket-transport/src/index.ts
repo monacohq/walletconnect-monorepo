@@ -11,7 +11,7 @@ import {
   getQueryString,
   detectEnv,
   appendToQueryString,
-} from "@walletconnect/utils";
+} from "@defilink/utils";
 
 import NetworkMonitor from "./network";
 

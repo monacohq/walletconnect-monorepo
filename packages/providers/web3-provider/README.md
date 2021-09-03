@@ -8,7 +8,7 @@ For more details, read the [documentation](https://docs.walletconnect.org)
 
 ```typescript
 import Web3 from "web3";
-import WalletConnectProvider from "@walletconnect/web3-provider";
+import WalletConnectProvider from "@defilink/web3-provider";
 
 //  Create WalletConnect Provider
 const provider = new WalletConnectProvider({

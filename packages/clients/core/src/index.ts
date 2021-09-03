@@ -44,8 +44,8 @@ import {
   mobileLinkChoiceKey,
   isMobile,
   removeLocal,
-} from "@walletconnect/utils";
-import SocketTransport from "@walletconnect/socket-transport";
+} from "@defilink/utils";
+import SocketTransport from "@defilink/socket-transport";
 import {
   ERROR_SESSION_CONNECTED,
   ERROR_SESSION_DISCONNECTED,
