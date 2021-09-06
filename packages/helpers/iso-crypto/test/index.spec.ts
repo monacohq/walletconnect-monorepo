@@ -11,13 +11,17 @@ const TEST_JSON_RPC_REQUEST: IJsonRpcRequest = {
   jsonrpc: "2.0",
   method: "wc_test",
   params: [],
+  session: {
+    chainId: 1,
+    account: ""
+  }
 };
 const TEST_KEY = "2254c5145902fe280fb035e98bea896e024b78ccab33a62a38f538c860d60339";
 const TEST_IV = "81413061def750d1a8f857d98d66584d";
 const TEST_ENCRYPTION_PAYLOAD: IEncryptionPayload = {
   data:
-    "170ac2b0c8ba61ac268455c42eb72c452e23888c6b357bcfc1b8c4c12770690c714e2171ceee0fa4aa639bcbfb9c6b111cbad0f73759c782253a3b4c0da1c43e",
-  hmac: "f779131fb8976435eb6984c23f597ffdf2f2a7122543d27907774c0f92142d33",
+    "170ac2b0c8ba61ac268455c42eb72c452e23888c6b357bcfc1b8c4c12770690c714e2171ceee0fa4aa639bcbfb9c6b11d156e2c5bcac2eedc321489b2cb596950b62364fdb07a35e105561f01bc0393b8b67c47551c728bad90291b57a89aff9",
+  hmac: "9b6ae1c61fe3bde9dfaea4f14c926b34fc3d31346c9efd54336324333ef7d51a",
   iv: "81413061def750d1a8f857d98d66584d",
 };
 
