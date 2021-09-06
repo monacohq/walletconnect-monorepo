@@ -838,6 +838,10 @@ class Connector implements IConnector {
       jsonrpc: "2.0",
       method: request.method,
       params: typeof request.params === "undefined" ? [] : request.params,
+      session: {
+        chainId: this.session.chainId,
+        account: this.session.accounts[0]
+      }
     };
     return formattedRequest;
   }

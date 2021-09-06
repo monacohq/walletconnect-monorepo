@@ -154,11 +154,17 @@ declare module "@defilink/types" {
     error: IJsonRpcErrorMessage;
   }
 
+  export interface IJsonRpcRequestSessionInfo {
+    chainId: number;
+    account: string;
+  }
+
   export interface IJsonRpcRequest {
     id: number;
     jsonrpc: string;
     method: string;
     params: any[];
+    session: IJsonRpcRequestSessionInfo
   }
 
   export interface IJsonRpcSubscription {
