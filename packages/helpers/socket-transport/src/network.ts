@@ -1,4 +1,4 @@
-import { NetworkEvent, INetworkEventEmitter, INetworkMonitor } from "@walletconnect/types";
+import { NetworkEvent, INetworkEventEmitter, INetworkMonitor } from "@defilink/types";
 
 // -- NetworkMonitor --------------------------------------------------------- //
 

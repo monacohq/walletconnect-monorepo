@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IAppRegistry, IAppEntry } from "@walletconnect/types";
+import { IMobileRegistryEntry, IAppRegistry, IAppEntry } from "@defilink/types";
 
 const API_URL = "https://registry.walletconnect.org";
 

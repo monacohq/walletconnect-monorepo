@@ -5,7 +5,7 @@ import {
   IJsonRpcResponseSuccess,
   IJsonRpcResponseError,
   IEncryptionPayload,
-} from "@walletconnect/types";
+} from "@defilink/types";
 import { convertArrayBufferToBuffer, convertBufferToArrayBuffer } from "@defilink/utils";
 
 export async function generateKey(length?: number): Promise<ArrayBuffer> {

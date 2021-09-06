@@ -4,7 +4,7 @@ import {
   INetworkMonitor,
   ITransportLib,
   ISocketTransportOptions,
-} from "@walletconnect/types";
+} from "@defilink/types";
 import {
   isBrowser,
   getLocation,

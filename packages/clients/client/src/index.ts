@@ -1,5 +1,5 @@
 import Connector from "@defilink/core";
-import { IWalletConnectOptions, IPushServerOptions } from "@walletconnect/types";
+import { IWalletConnectOptions, IPushServerOptions } from "@defilink/types";
 import * as cryptoLib from "@defilink/iso-crypto";
 
 class WalletConnect extends Connector {

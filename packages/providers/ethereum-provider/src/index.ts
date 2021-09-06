@@ -1,7 +1,7 @@
 import EventEmitter from "eventemitter3";
 import { JsonRpcProvider } from "@walletconnect/jsonrpc-provider";
 import { HttpConnection } from "@walletconnect/jsonrpc-http-connection";
-import { IConnector, IRpcConfig, IWCEthRpcConnectionOptions } from "@walletconnect/types";
+import { IConnector, IRpcConfig, IWCEthRpcConnectionOptions } from "@defilink/types";
 import { getRpcUrl, signingMethods } from "@defilink/utils";
 import { SignerConnection } from "@defilink/signer-connection";
 import { IEthereumProvider, ProviderAccounts, RequestArguments } from "eip1193-provider";

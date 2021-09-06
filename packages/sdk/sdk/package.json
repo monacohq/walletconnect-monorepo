@@ -1,5 +1,5 @@
 {
-  "name": "defilink",
+  "name": "@defilink/sdk",
   "version": "1.6.5",
   "description": "WalletConnect SDK",
   "scripts": {
@@ -62,7 +62,7 @@
   "dependencies": {
     "@defilink/client": "^1.6.5",
     "@defilink/qrcode-modal": "^1.6.5",
-    "@walletconnect/types": "^1.6.5",
+    "@defilink/types": "^1.6.5",
     "@defilink/utils": "^1.6.5",
     "@defilink/web3-provider": "^1.6.5"
   },

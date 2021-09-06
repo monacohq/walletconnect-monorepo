@@ -61,7 +61,7 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@walletconnect/types": "^1.6.5",
+    "@defilink/types": "^1.6.5",
     "@defilink/utils": "^1.6.5",
     "ws": "7.5.3"
   },

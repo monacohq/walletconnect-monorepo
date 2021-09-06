@@ -1,4 +1,4 @@
-import { IWalletConnectSession } from "@walletconnect/types";
+import { IWalletConnectSession } from "@defilink/types";
 import { isWalletConnectSession, getLocal, setLocal, removeLocal } from "@defilink/utils";
 
 class SessionStorage {

@@ -6,7 +6,7 @@ Open protocol for connecting Wallets to Dapps - https://walletconnect.org
 
 | SDK           | Current Version                                                                                      | Description |
 | ------------- | ---------------------------------------------------------------------------------------------------- | ----------- |
-| walletconnect | [![npm version](https://badge.fury.io/js/walletconnect.svg)](https://badge.fury.io/js/walletconnect) | SDK         |
+| @defilink/sdk | [![npm version](https://badge.fury.io/js/walletconnect.svg)](https://badge.fury.io/js/walletconnect) | SDK         |
 
 | Clients               | Current Version                                                                                                              | Description       |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------- |
@@ -29,7 +29,7 @@ Open protocol for connecting Wallets to Dapps - https://walletconnect.org
 | @defilink/react-native-dapp | [![npm version](https://badge.fury.io/js/%40walletconnect%2Freact-native-dapp.svg)](https://badge.fury.io/js/%40walletconnect%2Freact-native-dapp) | React-Native Dapp |
 | @defilink/signer-connection | [![npm version](https://badge.fury.io/js/%40walletconnect%2Fsigner-connection.svg)](https://badge.fury.io/js/%40walletconnect%2Fsigner-connection) | Signer Connection |
 | @defilink/socket-transport  | [![npm version](https://badge.fury.io/js/%40walletconnect%2Fsocket-transport.svg)](https://badge.fury.io/js/%40walletconnect%2Fsocket-transport)   | Socket Transport  |
-| @walletconnect/types             | [![npm version](https://badge.fury.io/js/%40walletconnect%2Ftypes.svg)](https://badge.fury.io/js/%40walletconnect%2Ftypes)                         | Typescript Types  |
+| @defilink/types             | [![npm version](https://badge.fury.io/js/%40walletconnect%2Ftypes.svg)](https://badge.fury.io/js/%40walletconnect%2Ftypes)                         | Typescript Types  |
 | @defilink/utils             | [![npm version](https://badge.fury.io/js/%40walletconnect%2Futils.svg)](https://badge.fury.io/js/%40walletconnect%2Futils)                         | Utility Library   |
 
 `## Quick Start`

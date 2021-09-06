@@ -67,7 +67,7 @@
     "@walletconnect/jsonrpc-http-connection": "^1.0.0",
     "@walletconnect/jsonrpc-provider": "^1.0.0",
     "@defilink/signer-connection": "^1.6.5",
-    "@walletconnect/types": "^1.6.5",
+    "@defilink/types": "^1.6.5",
     "@defilink/utils": "^1.6.5",
     "eip1193-provider": "1.0.1",
     "eventemitter3": "4.0.7"

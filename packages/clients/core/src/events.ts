@@ -11,7 +11,7 @@ import {
   IJsonRpcResponseError,
   IJsonRpcRequest,
   IEventEmitter,
-} from "@walletconnect/types";
+} from "@defilink/types";
 
 // -- EventManager --------------------------------------------------------- //
 

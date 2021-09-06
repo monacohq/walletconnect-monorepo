@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IMobileRegistryEntry, IQRCodeModalOptions } from "@walletconnect/types";
+import { IMobileRegistryEntry, IQRCodeModalOptions } from "@defilink/types";
 import { isAndroid, formatIOSMobile, saveMobileLinkInfo } from "@defilink/browser-utils";
 
 import { DEFAULT_BUTTON_COLOR, WALLETCONNECT_CTA_TEXT_ID } from "../constants";

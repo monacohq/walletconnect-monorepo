@@ -9,7 +9,7 @@ import {
   IJsonRpcResponseSuccess,
   IWalletConnectProviderOptions,
   IQRCodeModalOptions,
-} from "@walletconnect/types";
+} from "@defilink/types";
 
 const ProviderEngine = require("web3-provider-engine");
 const CacheSubprovider = require("web3-provider-engine/subproviders/cache");

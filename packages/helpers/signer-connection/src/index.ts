@@ -9,7 +9,7 @@ import {
   IJsonRpcResponseSuccess,
   IQRCodeModalOptions,
   IWCEthRpcConnectionOptions,
-} from "@walletconnect/types";
+} from "@defilink/types";
 
 export class SignerConnection extends IJsonRpcConnection {
   public events: any = new EventEmitter();

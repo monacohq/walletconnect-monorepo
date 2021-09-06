@@ -24,7 +24,7 @@ import {
   IPushServerOptions,
   IWalletConnectSession,
   IQRCodeModalOptions,
-} from "@walletconnect/types";
+} from "@defilink/types";
 import {
   parsePersonalSign,
   parseTransactionData,

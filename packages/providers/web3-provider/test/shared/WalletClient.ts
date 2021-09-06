@@ -1,6 +1,6 @@
 import { ethers, utils } from "ethers";
 import WalletConnect from "@defilink/client";
-import { IConnector } from "@walletconnect/types";
+import { IConnector } from "@defilink/types";
 
 export interface WalletClientOpts {
   privateKey: string;

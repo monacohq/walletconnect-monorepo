@@ -4,7 +4,7 @@ import {
   IQRCodeModalOptions,
   IAppRegistry,
   IMobileLinkInfo,
-} from "@walletconnect/types";
+} from "@defilink/types";
 import {
   isMobile,
   isAndroid,

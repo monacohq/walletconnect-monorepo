@@ -10,7 +10,7 @@ import {
   IWCRpcConnectionOptions,
   IWalletConnectStarkwareProviderOptions,
   IWalletConnectOptions,
-} from "@walletconnect/types";
+} from "@defilink/types";
 
 class WalletConnectSDK {
   public connector: IConnector | undefined;

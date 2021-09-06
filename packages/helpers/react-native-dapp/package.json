@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@defilink/client": "^1.6.5",
-    "@walletconnect/types": "^1.6.5",
+    "@defilink/types": "^1.6.5",
     "@defilink/utils": "^1.6.5",
     "keyvaluestorage": "0.7.1",
     "react-native-qrcode-svg": "6.0.6",
