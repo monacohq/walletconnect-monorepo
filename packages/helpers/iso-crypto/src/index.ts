@@ -5,8 +5,8 @@ import {
   IJsonRpcResponseSuccess,
   IJsonRpcResponseError,
   IEncryptionPayload,
-} from "@defilink/types";
-import { convertArrayBufferToBuffer, convertBufferToArrayBuffer } from "@defilink/utils";
+} from "@deficonnect/types";
+import { convertArrayBufferToBuffer, convertBufferToArrayBuffer } from "@deficonnect/utils";
 
 export async function generateKey(length?: number): Promise<ArrayBuffer> {
   const _length = (length || 256) / 8;

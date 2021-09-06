@@ -1,5 +1,5 @@
 {
-  "name": "@defilink/iso-crypto",
+  "name": "@deficonnect/iso-crypto",
   "version": "1.6.5",
   "description": "Isomorphic Crypto for WalletConnect",
   "scripts": {
@@ -62,8 +62,8 @@
   },
   "dependencies": {
     "@walletconnect/crypto": "^1.0.1",
-    "@defilink/types": "^1.6.5",
-    "@defilink/utils": "^1.6.5"
+    "@deficonnect/types": "^1.6.5",
+    "@deficonnect/utils": "^1.6.5"
   },
   "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7"
 }

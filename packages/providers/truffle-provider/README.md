@@ -5,17 +5,17 @@ Deploy your contracts using WalletConnect
 ## Install
 
 ```bash
-yarn add @defilink/truffle-provider
+yarn add @deficonnect/truffle-provider
 
 # OR
 
-npm install --save @defilink/truffle-provider
+npm install --save @deficonnect/truffle-provider
 ```
 
 ## Example usage
 
 ```javascript
-const WalletConnectProvider = require('@defilink/truffle-provider').default
+const WalletConnectProvider = require('@deficonnect/truffle-provider').default
 
 let provider = new WalletConnectProvider(
   `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`

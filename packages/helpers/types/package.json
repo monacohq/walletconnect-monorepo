@@ -1,5 +1,5 @@
 {
-  "name": "@defilink/types",
+  "name": "@deficonnect/types",
   "version": "1.6.5",
   "description": "Typescript Types for WalletConnect",
   "scripts": {},

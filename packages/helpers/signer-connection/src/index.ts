@@ -1,6 +1,6 @@
 import EventEmitter from "eventemitter3";
-import WalletConnect from "@defilink/client";
-import QRCodeModal from "@defilink/qrcode-modal";
+import WalletConnect from "@deficonnect/client";
+import QRCodeModal from "@deficonnect/qrcode-modal";
 import { IJsonRpcConnection, JsonRpcError, JsonRpcResponse } from "@walletconnect/jsonrpc-types";
 import { formatJsonRpcError } from "@walletconnect/jsonrpc-utils";
 import {
@@ -9,7 +9,7 @@ import {
   IJsonRpcResponseSuccess,
   IQRCodeModalOptions,
   IWCEthRpcConnectionOptions,
-} from "@defilink/types";
+} from "@deficonnect/types";
 
 export class SignerConnection extends IJsonRpcConnection {
   public events: any = new EventEmitter();

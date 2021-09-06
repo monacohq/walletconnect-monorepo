@@ -1,1 +1,1 @@
-declare module "@defilink/web3-provider"
+declare module "@deficonnect/web3-provider"

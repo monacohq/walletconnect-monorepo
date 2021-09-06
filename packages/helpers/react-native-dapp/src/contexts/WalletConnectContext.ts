@@ -11,7 +11,7 @@ const defaultValue: Partial<WalletConnectContextValue> = Object.freeze({
     name: "WalletConnect",
   },
   storageOptions: {
-    rootStorageKey: "@defilink/qrcode-modal-react-native",
+    rootStorageKey: "@deficonnect/qrcode-modal-react-native",
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   connectToWalletService: async (walletService: WalletService, uri?: string) => Promise.reject(new Error(

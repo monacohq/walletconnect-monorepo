@@ -1,6 +1,6 @@
 import "mocha";
 import { expect } from "chai";
-import { ICreateSessionOptions } from "@defilink/types";
+import { ICreateSessionOptions } from "@deficonnect/types";
 
 import IsomorphicClient from "../../src";
 

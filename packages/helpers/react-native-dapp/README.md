@@ -1,4 +1,4 @@
-# `@defilink/react-native-dapp`
+# `@deficonnect/react-native-dapp`
 
 A drop-in library which helps easily connect your [**React Native**](https://reactnative.dev) dapps to [**Ethereum**](https://ethereum.org) Wallets on [**Android**](https://reactnative.dev), [**iOS**](https://reactnative.dev) and the [**Web**](https://github.com/necolas/react-native-web).
 
@@ -8,10 +8,10 @@ For more details, check out the [documentation](https://docs.walletconnect.org).
 
 ## Installing
 
-To get started, install `@defilink/react-native-dapp`:
+To get started, install `@deficonnect/react-native-dapp`:
 
 ```sh
-yarn add @defilink/react-native-dapp
+yarn add @deficonnect/react-native-dapp
 ```
 
 If you haven't already, you may also need to install [`react-native-svg`](https://github.com/react-native-svg/react-native-svg) alongside a persistent storage provider such as [`@react-native-async-storage/async-storage`](https://github.com/react-native-async-storage/async-storage):
@@ -30,7 +30,7 @@ At the root of your application, you can declare a [`WalletConnectProvider`](./s
 
 ```typescript
 import * as React from 'react';
-import WalletConnectProvider from '@defilink/react-native-dapp';
+import WalletConnectProvider from '@deficonnect/react-native-dapp';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App(): JSX.Element {
@@ -56,7 +56,7 @@ Notably, the [`WalletConnectProvider`](./src/providers/WalletConnectProvider.tsx
 
 ```typescript
 import * as React from 'react';
-import WalletConnectProvider from '@defilink/react-native-dapp';
+import WalletConnectProvider from '@deficonnect/react-native-dapp';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App(): JSX.Element {
@@ -88,7 +88,7 @@ Alternatively to manually using the [`WalletConnectProvider`](./src/providers/Wa
 
 ```typescript
 import * as React from 'react';
-import { withWalletConnect, useWalletConnect } from '@defilink/react-native-dapp';
+import { withWalletConnect, useWalletConnect } from '@deficonnect/react-native-dapp';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function App(): JSX.Element {
@@ -115,7 +115,7 @@ The [`useWalletConnect`](./src/hooks/useWalletConnect.ts) hook provides access t
 
 ```typescript
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useWalletConnect, withWalletConnect } from '@defilink/react-native-dapp';
+import { useWalletConnect, withWalletConnect } from '@deficonnect/react-native-dapp';
 import * as React from 'react';
 
 function App(): JSX.Element {
@@ -138,7 +138,7 @@ export default withWalletConnect(App, {
 ```
 
 ## Customization
-`@defilink/react-native-dapp` also permits you to customize the presentation of the [`QrcodeModal`](./src/components/QrcodeModal.tsx). This is achieved by passing the [**Render Callback**]() prop, `renderQrcodeModal`, to our calls to `withWalletConnect` or instances of `WalletConnectProvider`.
+`@deficonnect/react-native-dapp` also permits you to customize the presentation of the [`QrcodeModal`](./src/components/QrcodeModal.tsx). This is achieved by passing the [**Render Callback**]() prop, `renderQrcodeModal`, to our calls to `withWalletConnect` or instances of `WalletConnectProvider`.
 
 For example, you could choose to render a wallet selection using a `BottomSheet` opposed to a `Modal`:
 
@@ -151,7 +151,7 @@ import {
   withWalletConnect,
   RenderQrcodeModalProps,
   WalletService,
-} from '@defilink/react-native-dapp';
+} from '@deficonnect/react-native-dapp';
 import * as React from 'react';
 
 function CustomBottomSheet({

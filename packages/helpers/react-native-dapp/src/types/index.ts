@@ -1,5 +1,5 @@
-import WalletConnect from "@defilink/client";
-import { IWalletConnectOptions } from "@defilink/types";
+import WalletConnect from "@deficonnect/client";
+import { IWalletConnectOptions } from "@deficonnect/types";
 import { ReactNativeStorageOptions } from "keyvaluestorage";
 
 export enum ConnectorEvents {

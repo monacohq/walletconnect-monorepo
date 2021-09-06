@@ -4,14 +4,14 @@ import {
   isJsonRpcResponseError,
   isInternalEvent,
   isReservedEvent,
-} from "@defilink/utils";
+} from "@deficonnect/utils";
 import {
   IInternalEvent,
   IJsonRpcResponseSuccess,
   IJsonRpcResponseError,
   IJsonRpcRequest,
   IEventEmitter,
-} from "@defilink/types";
+} from "@deficonnect/types";
 
 // -- EventManager --------------------------------------------------------- //
 

@@ -1,4 +1,4 @@
-import { IMobileRegistryEntry, IMobileRegistry, IMobileLinkInfo } from "@defilink/types";
+import { IMobileRegistryEntry, IMobileRegistry, IMobileLinkInfo } from "@deficonnect/types";
 
 import { setLocal } from "./local";
 

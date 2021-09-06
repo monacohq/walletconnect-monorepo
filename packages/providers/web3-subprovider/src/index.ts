@@ -1,6 +1,6 @@
-import WalletConnect from "@defilink/client";
-import QRCodeModal from "@defilink/qrcode-modal";
-import { IWCEthRpcConnectionOptions, IConnector } from "@defilink/types";
+import WalletConnect from "@deficonnect/client";
+import QRCodeModal from "@deficonnect/qrcode-modal";
+import { IWCEthRpcConnectionOptions, IConnector } from "@deficonnect/types";
 
 const HookedWalletSubprovider = require("web3-provider-engine/subproviders/hooked-wallet");
 

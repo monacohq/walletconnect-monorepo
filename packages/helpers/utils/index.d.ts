@@ -1,1 +1,1 @@
-declare module "@defilink/utils"
+declare module "@deficonnect/utils"

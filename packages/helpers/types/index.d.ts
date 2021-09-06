@@ -1,4 +1,4 @@
-declare module "@defilink/types" {
+declare module "@deficonnect/types" {
   export interface IConnector {
     bridge: string;
     key: string;

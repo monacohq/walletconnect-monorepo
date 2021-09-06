@@ -4,14 +4,14 @@ import {
   INetworkMonitor,
   ITransportLib,
   ISocketTransportOptions,
-} from "@defilink/types";
+} from "@deficonnect/types";
 import {
   isBrowser,
   getLocation,
   getQueryString,
   detectEnv,
   appendToQueryString,
-} from "@defilink/utils";
+} from "@deficonnect/utils";
 
 import NetworkMonitor from "./network";
 

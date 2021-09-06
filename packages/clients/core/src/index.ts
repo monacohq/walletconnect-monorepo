@@ -24,7 +24,7 @@ import {
   IPushServerOptions,
   IWalletConnectSession,
   IQRCodeModalOptions,
-} from "@defilink/types";
+} from "@deficonnect/types";
 import {
   parsePersonalSign,
   parseTransactionData,
@@ -44,8 +44,8 @@ import {
   mobileLinkChoiceKey,
   isMobile,
   removeLocal,
-} from "@defilink/utils";
-import SocketTransport from "@defilink/socket-transport";
+} from "@deficonnect/utils";
+import SocketTransport from "@deficonnect/socket-transport";
 import {
   ERROR_SESSION_CONNECTED,
   ERROR_SESSION_DISCONNECTED,

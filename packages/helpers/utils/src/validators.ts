@@ -5,7 +5,7 @@ import {
   IJsonRpcResponseSuccess,
   IJsonRpcResponseError,
   IInternalEvent,
-} from "@defilink/types";
+} from "@deficonnect/types";
 
 import { signingMethods, reservedEvents } from "./constants";
 

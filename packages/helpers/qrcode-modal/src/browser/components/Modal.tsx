@@ -4,7 +4,7 @@ import {
   IQRCodeModalOptions,
   IAppRegistry,
   IMobileLinkInfo,
-} from "@defilink/types";
+} from "@deficonnect/types";
 import {
   isMobile,
   isAndroid,
@@ -13,7 +13,7 @@ import {
   getMobileLinkRegistry,
   getWalletRegistryUrl,
   formatMobileRegistry,
-} from "@defilink/browser-utils";
+} from "@deficonnect/browser-utils";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Header from "./Header";

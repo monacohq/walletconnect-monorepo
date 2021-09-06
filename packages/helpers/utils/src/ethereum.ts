@@ -1,7 +1,7 @@
 import { keccak_256 } from "js-sha3";
 import { removeHexPrefix, addHexPrefix } from "@walletconnect/encoding";
 
-import { ITxData } from "@defilink/types";
+import { ITxData } from "@deficonnect/types";
 import { convertUtf8ToHex, convertNumberToHex, convertUtf8ToBuffer } from "./encoding";
 import { sanitizeHex, removeHexLeadingZeros } from "./misc";
 import { isEmptyArray, isHexString, isEmptyString } from "./validators";

@@ -1,4 +1,4 @@
-import { IClientMeta } from "@defilink/types";
+import { IClientMeta } from "@deficonnect/types";
 
 import * as windowMetadata from "@walletconnect/window-metadata";
 import * as windowGetters from "@walletconnect/window-getters";

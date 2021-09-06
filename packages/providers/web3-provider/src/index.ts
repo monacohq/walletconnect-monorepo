@@ -1,7 +1,7 @@
-import WalletConnect from "@defilink/client";
-import QRCodeModal from "@defilink/qrcode-modal";
-import HttpConnection from "@defilink/http-connection";
-import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "@defilink/utils";
+import WalletConnect from "@deficonnect/client";
+import QRCodeModal from "@deficonnect/qrcode-modal";
+import HttpConnection from "@deficonnect/http-connection";
+import { payloadId, signingMethods, parsePersonalSign, getRpcUrl } from "@deficonnect/utils";
 import {
   IRPCMap,
   IConnector,
@@ -9,7 +9,7 @@ import {
   IJsonRpcResponseSuccess,
   IWalletConnectProviderOptions,
   IQRCodeModalOptions,
-} from "@defilink/types";
+} from "@deficonnect/types";
 
 const ProviderEngine = require("web3-provider-engine");
 const CacheSubprovider = require("web3-provider-engine/subproviders/cache");

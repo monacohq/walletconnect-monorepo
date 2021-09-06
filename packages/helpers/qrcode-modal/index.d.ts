@@ -1,1 +1,1 @@
-declare module "@defilink/qrcode-modal"
+declare module "@deficonnect/qrcode-modal"

@@ -1,1 +1,1 @@
-declare module "@defilink/browser-utils";
+declare module "@deficonnect/browser-utils";

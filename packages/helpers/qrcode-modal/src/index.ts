@@ -1,4 +1,4 @@
-import { IQRCodeModalOptions } from "@defilink/types";
+import { IQRCodeModalOptions } from "@deficonnect/types";
 
 import * as nodeLib from "./node";
 import * as browserLib from "./browser";

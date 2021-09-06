@@ -1,5 +1,5 @@
 {
-  "name": "@defilink/http-connection",
+  "name": "@deficonnect/http-connection",
   "version": "1.6.5",
   "description": "Http Connection for WalletConnect Providers",
   "scripts": {
@@ -61,8 +61,8 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@defilink/types": "^1.6.5",
-    "@defilink/utils": "^1.6.5",
+    "@deficonnect/types": "^1.6.5",
+    "@deficonnect/utils": "^1.6.5",
     "eventemitter3": "4.0.7",
     "xhr2-cookies": "1.1.0"
   },

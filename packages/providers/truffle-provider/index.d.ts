@@ -1,1 +1,1 @@
-declare module "@defilink/truffle-provider"
+declare module "@deficonnect/truffle-provider"

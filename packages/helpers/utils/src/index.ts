@@ -1,4 +1,4 @@
-export * from "@defilink/browser-utils";
+export * from "@deficonnect/browser-utils";
 
 export * from "./constants";
 export * from "./encoding";

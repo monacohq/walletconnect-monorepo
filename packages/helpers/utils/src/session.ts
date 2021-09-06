@@ -3,7 +3,7 @@ import {
   IRequiredParamsResult,
   IQueryParamsResult,
   IWalletConnectSession,
-} from "@defilink/types";
+} from "@deficonnect/types";
 import { parseQueryString } from "./url";
 
 export function isWalletConnectSession(object: any): object is IWalletConnectSession {

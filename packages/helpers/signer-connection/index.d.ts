@@ -1,1 +1,1 @@
-declare module "@defilink/signer-connection";
+declare module "@deficonnect/signer-connection";

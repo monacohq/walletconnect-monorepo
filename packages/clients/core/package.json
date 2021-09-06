@@ -1,5 +1,5 @@
 {
-  "name": "@defilink/core",
+  "name": "@deficonnect/core",
   "version": "1.6.5",
   "description": "Core Library for WalletConnect",
   "scripts": {
@@ -60,9 +60,9 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@defilink/socket-transport": "^1.6.5",
-    "@defilink/types": "^1.6.5",
-    "@defilink/utils": "^1.6.5"
+    "@deficonnect/socket-transport": "^1.6.5",
+    "@deficonnect/types": "^1.6.5",
+    "@deficonnect/utils": "^1.6.5"
   },
   "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7"
 }

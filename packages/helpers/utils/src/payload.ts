@@ -2,7 +2,7 @@ import {
   IJsonRpcResponseSuccess,
   IJsonRpcResponseError,
   IJsonRpcErrorMessage,
-} from "@defilink/types";
+} from "@deficonnect/types";
 
 export function promisify(
   originalFn: (...args: any[]) => void,

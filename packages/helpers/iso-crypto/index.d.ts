@@ -1,1 +1,1 @@
-declare module "@defilink/iso-crypto"
+declare module "@deficonnect/iso-crypto"

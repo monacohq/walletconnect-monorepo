@@ -1,5 +1,5 @@
-import WalletConnect from '@defilink/client';
-import { ICreateSessionOptions, IWalletConnectSession } from '@defilink/types';
+import WalletConnect from '@deficonnect/client';
+import { ICreateSessionOptions, IWalletConnectSession } from '@deficonnect/types';
 import deepmerge from 'deepmerge';
 import { KeyValueStorage, ReactNativeStorageOptions } from 'keyvaluestorage';
 import * as React from 'react';

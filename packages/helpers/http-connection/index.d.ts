@@ -1,1 +1,1 @@
-declare module "@defilink/http-connection"
+declare module "@deficonnect/http-connection"

@@ -1,1 +1,1 @@
-declare module "@defilink/client"
+declare module "@deficonnect/client"

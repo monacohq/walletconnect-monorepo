@@ -1,1 +1,1 @@
-declare module "@defilink/socket-transport"
+declare module "@deficonnect/socket-transport"

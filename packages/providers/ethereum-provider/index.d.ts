@@ -1,1 +1,1 @@
-declare module "@defilink/ethereum-provider";
+declare module "@deficonnect/ethereum-provider";

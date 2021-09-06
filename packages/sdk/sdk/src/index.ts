@@ -1,7 +1,7 @@
-import WalletConnect from "@defilink/client";
-import QRCodeModal from "@defilink/qrcode-modal";
-import Web3Provider from "@defilink/web3-provider";
-import { isNode } from "@defilink/utils";
+import WalletConnect from "@deficonnect/client";
+import QRCodeModal from "@deficonnect/qrcode-modal";
+import Web3Provider from "@deficonnect/web3-provider";
+import { isNode } from "@deficonnect/utils";
 import {
   IWalletConnectSDKOptions,
   IConnector,
@@ -10,7 +10,7 @@ import {
   IWCRpcConnectionOptions,
   IWalletConnectStarkwareProviderOptions,
   IWalletConnectOptions,
-} from "@defilink/types";
+} from "@deficonnect/types";
 
 class WalletConnectSDK {
   public connector: IConnector | undefined;

@@ -1,5 +1,5 @@
 {
-  "name": "@defilink/web3-subprovider",
+  "name": "@deficonnect/web3-subprovider",
   "version": "1.6.5",
   "description": "Web3 Subprovider for WalletConnect",
   "scripts": {
@@ -60,9 +60,9 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "@defilink/client": "^1.6.5",
-    "@defilink/qrcode-modal": "^1.6.5",
-    "@defilink/types": "^1.6.5",
+    "@deficonnect/client": "^1.6.5",
+    "@deficonnect/qrcode-modal": "^1.6.5",
+    "@deficonnect/types": "^1.6.5",
     "web3-provider-engine": "16.0.1"
   },
   "gitHead": "165f7993c2acc907c653c02847fb02721052c6e7"
