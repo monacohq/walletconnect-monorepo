@@ -263,7 +263,7 @@ function getWebSocketUrl(_url: string, protocol: string, version: number): strin
         version,
         env: detectEnv()?.name || "",
       };
-  const queryString = appendToQueryString(getQueryString(splitUrl[1] || ""), params);
+  const queryString = appendToQueryString(getQueryString("?" + (splitUrl[1] || "")), params);
   return splitUrl[0] + "?" + queryString;
 }
 
