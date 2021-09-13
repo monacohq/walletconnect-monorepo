@@ -1,6 +1,6 @@
 {
   "name": "@deficonnect/browser-utils",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "Browser Utilities for WalletConnect",
   "scripts": {
     "clean": "rm -rf dist",
@@ -62,8 +62,8 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
+    "@deficonnect/types": "^1.6.6",
     "@walletconnect/safe-json": "1.0.0",
-    "@deficonnect/types": "^1.6.5",
     "@walletconnect/window-getters": "1.0.0",
     "@walletconnect/window-metadata": "1.0.0",
     "detect-browser": "5.2.0"

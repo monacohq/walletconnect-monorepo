@@ -13,8 +13,8 @@ const TEST_JSON_RPC_REQUEST: IJsonRpcRequest = {
   params: [],
   session: {
     chainId: 1,
-    account: ""
-  }
+    account: "",
+  },
 };
 const TEST_KEY = "2254c5145902fe280fb035e98bea896e024b78ccab33a62a38f538c860d60339";
 const TEST_IV = "81413061def750d1a8f857d98d66584d";
