@@ -150,7 +150,7 @@ class WalletConnectProvider extends ProviderEngine {
       let result: any = null;
       const wc = await this.getWalletConnector();
       switch (payload.method) {
-        case "wc_killSession":
+        case "dc_killSession":
           await this.close();
           result = null;
           break;

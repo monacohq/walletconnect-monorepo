@@ -385,7 +385,7 @@ class Connector implements IConnector {
     this._key = await this._generateKey();
 
     const request: IJsonRpcRequest = this._formatRequest({
-      method: "wc_instantRequest",
+      method: "dc_instantRequest",
       params: [
         {
           peerId: this.clientId,
@@ -464,7 +464,7 @@ class Connector implements IConnector {
     this._key = await this._generateKey();
 
     const request: IJsonRpcRequest = this._formatRequest({
-      method: "wc_sessionRequest",
+      method: "dc_sessionRequest",
       params: [
         {
           peerId: this.clientId,
@@ -572,7 +572,7 @@ class Connector implements IConnector {
     };
 
     const request = this._formatRequest({
-      method: "wc_sessionUpdate",
+      method: "dc_sessionUpdate",
       params: [sessionParams],
     });
 
@@ -602,7 +602,7 @@ class Connector implements IConnector {
     };
 
     const request = this._formatRequest({
-      method: "wc_sessionUpdate",
+      method: "dc_sessionUpdate",
       params: [sessionParams],
     });
 
@@ -1064,7 +1064,7 @@ class Connector implements IConnector {
       }
     });
 
-    this.on("wc_sessionRequest", (error, payload) => {
+    this.on("dc_sessionRequest", (error, payload) => {
       if (error) {
         this._eventManager.trigger({
           event: "error",
@@ -1087,7 +1087,7 @@ class Connector implements IConnector {
       this._eventManager.trigger(internalPayload);
     });
 
-    this.on("wc_sessionUpdate", (error, payload) => {
+    this.on("dc_sessionUpdate", (error, payload) => {
       if (error) {
         this._handleSessionResponse(error.message);
       }
