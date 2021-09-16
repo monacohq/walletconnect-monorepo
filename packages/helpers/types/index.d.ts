@@ -229,6 +229,18 @@ declare module "@deficonnect/types" {
     peerMeta?: IClientMeta | null;
   }
 
+
+  export interface IWalletConnectSessionWalletAdress {
+    eth: string;
+    cro: string;
+    tcro: string;
+  }
+  export interface IWalletConnectSessionWallet {
+    id: string;
+    name: string;
+    icon: string;
+    address: IWalletConnectSessionWalletAdress;
+  }
   export interface IWalletConnectSession {
     connected: boolean;
     accounts: string[];
@@ -241,6 +253,8 @@ declare module "@deficonnect/types" {
     peerMeta: IClientMeta | null;
     handshakeId: number;
     handshakeTopic: string;
+    selectedWalletId: string;
+    wallets: IWalletConnectSessionWallet[];
   }
 
   export interface IWalletConnectOptions {
