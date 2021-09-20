@@ -662,17 +662,14 @@ class Connector implements IConnector {
       id: payloadId(),
       jsonrpc: "2.1",
       method: jsonRequest.method,
-      params: typeof jsonRequest.params === "undefined" ? [] : jsonRequest.params,
+      params: jsonRequest.params ?? [],
       session: jsonRequest.session,
     };
 
     const encryptionPayload: IEncryptionPayload | null = await this._encrypt(request);
     const topic: string = this.peerId;
     const payload: string = JSON.stringify(encryptionPayload);
-    const silent =
-      typeof options?.forcePushNotification !== "undefined"
-        ? !options.forcePushNotification
-        : isSilentPayload(request);
+    const silent = options?.forcePushNotification ?? isSilentPayload(request);
 
     this._transport.send(payload, topic, silent);
 
