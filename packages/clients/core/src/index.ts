@@ -24,6 +24,7 @@ import {
   IPushServerOptions,
   IWalletConnectSession,
   IQRCodeModalOptions,
+  IWalletConnectSessionWallet,
 } from "@deficonnect/types";
 import {
   parsePersonalSign,
@@ -98,6 +99,8 @@ class Connector implements IConnector {
   private _chainId = 0;
   private _networkId = 0;
   private _rpcUrl = "";
+  private _selectedWalletId = "";
+  private _wallets: IWalletConnectSessionWallet[] = [];
 
   // -- controllers ----------------------------------------------------- //
 
@@ -245,6 +248,24 @@ class Connector implements IConnector {
     return peerMeta;
   }
 
+  set selectedWalletId(value) {
+    this._selectedWalletId = value;
+  }
+
+  get selectedWalletId() {
+    const selectedWalletId: string | null = this._selectedWalletId;
+    return selectedWalletId;
+  }
+
+  set wallets(value) {
+    this._wallets = value;
+  }
+
+  get wallets() {
+    const wallets: IWalletConnectSessionWallet[] = this._wallets;
+    return wallets;
+  }
+
   set handshakeTopic(value) {
     if (!value) {
       return;
@@ -347,6 +368,8 @@ class Connector implements IConnector {
       peerMeta: this.peerMeta,
       handshakeId: this.handshakeId,
       handshakeTopic: this.handshakeTopic,
+      selectedWalletId: this.selectedWalletId,
+      wallets: this.wallets,
     };
   }
 
@@ -365,6 +388,8 @@ class Connector implements IConnector {
     this.peerMeta = value.peerMeta;
     this.handshakeId = value.handshakeId;
     this.handshakeTopic = value.handshakeTopic;
+    this.selectedWalletId = value.selectedWalletId;
+    this.wallets = value.wallets;
   }
 
   // -- public ---------------------------------------------------------- //
