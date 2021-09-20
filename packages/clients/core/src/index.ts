@@ -24,6 +24,7 @@ import {
   IPushServerOptions,
   IWalletConnectSession,
   IQRCodeModalOptions,
+  IWalletConnectSessionWallet,
 } from "@deficonnect/types";
 import {
   parsePersonalSign,
@@ -98,6 +99,8 @@ class Connector implements IConnector {
   private _chainId = 0;
   private _networkId = 0;
   private _rpcUrl = "";
+  private _selectedWalletId = "";
+  private _wallets: IWalletConnectSessionWallet[] = [];
 
   // -- controllers ----------------------------------------------------- //
 
@@ -245,6 +248,24 @@ class Connector implements IConnector {
     return peerMeta;
   }
 
+  set selectedWalletId(value) {
+    this._selectedWalletId = value;
+  }
+
+  get selectedWalletId() {
+    const selectedWalletId: string | null = this._selectedWalletId;
+    return selectedWalletId;
+  }
+
+  set wallets(value) {
+    this._wallets = value;
+  }
+
+  get wallets() {
+    const wallets: IWalletConnectSessionWallet[] = this._wallets;
+    return wallets;
+  }
+
   set handshakeTopic(value) {
     if (!value) {
       return;
@@ -347,6 +368,8 @@ class Connector implements IConnector {
       peerMeta: this.peerMeta,
       handshakeId: this.handshakeId,
       handshakeTopic: this.handshakeTopic,
+      selectedWalletId: this.selectedWalletId,
+      wallets: this.wallets,
     };
   }
 
@@ -365,6 +388,8 @@ class Connector implements IConnector {
     this.peerMeta = value.peerMeta;
     this.handshakeId = value.handshakeId;
     this.handshakeTopic = value.handshakeTopic;
+    this.selectedWalletId = value.selectedWalletId;
+    this.wallets = value.wallets;
   }
 
   // -- public ---------------------------------------------------------- //
@@ -385,7 +410,7 @@ class Connector implements IConnector {
     this._key = await this._generateKey();
 
     const request: IJsonRpcRequest = this._formatRequest({
-      method: "wc_instantRequest",
+      method: "dc_instantRequest",
       params: [
         {
           peerId: this.clientId,
@@ -464,7 +489,7 @@ class Connector implements IConnector {
     this._key = await this._generateKey();
 
     const request: IJsonRpcRequest = this._formatRequest({
-      method: "wc_sessionRequest",
+      method: "dc_sessionRequest",
       params: [
         {
           peerId: this.clientId,
@@ -572,7 +597,7 @@ class Connector implements IConnector {
     };
 
     const request = this._formatRequest({
-      method: "wc_sessionUpdate",
+      method: "dc_sessionUpdate",
       params: [sessionParams],
     });
 
@@ -602,7 +627,7 @@ class Connector implements IConnector {
     };
 
     const request = this._formatRequest({
-      method: "wc_sessionUpdate",
+      method: "dc_sessionUpdate",
       params: [sessionParams],
     });
 
@@ -1064,7 +1089,7 @@ class Connector implements IConnector {
       }
     });
 
-    this.on("wc_sessionRequest", (error, payload) => {
+    this.on("dc_sessionRequest", (error, payload) => {
       if (error) {
         this._eventManager.trigger({
           event: "error",
@@ -1087,7 +1112,7 @@ class Connector implements IConnector {
       this._eventManager.trigger(internalPayload);
     });
 
-    this.on("wc_sessionUpdate", (error, payload) => {
+    this.on("dc_sessionUpdate", (error, payload) => {
       if (error) {
         this._handleSessionResponse(error.message);
       }
