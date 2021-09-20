@@ -1,6 +1,6 @@
 {
   "name": "@deficonnect/types",
-  "version": "1.6.7-alpha.0",
+  "version": "1.6.7-alpha.1",
   "description": "Typescript Types for WalletConnect",
   "scripts": {},
   "keywords": [
