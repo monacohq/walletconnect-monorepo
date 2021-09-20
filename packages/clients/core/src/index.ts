@@ -25,6 +25,7 @@ import {
   IWalletConnectSession,
   IQRCodeModalOptions,
   IWalletConnectSessionWallet,
+  IJsonRpcRequestSessionInfo,
 } from "@deficonnect/types";
 import {
   parsePersonalSign,
@@ -650,6 +651,33 @@ class Connector implements IConnector {
 
     const result = await this._sendCallRequest(request);
     return result;
+  }
+
+  public async sendJSONRequest(jsonRequest: {
+    method: string;
+    params: any[];
+    session: IJsonRpcRequestSessionInfo;
+  }, options?: IRequestOptions) {
+    const request: IJsonRpcRequest = {
+      id: payloadId(),
+      jsonrpc: "2.1",
+      method: jsonRequest.method,
+      params: jsonRequest.params ?? [],
+      session: jsonRequest.session,
+    };
+
+    const encryptionPayload: IEncryptionPayload | null = await this._encrypt(request);
+    const topic: string = this.peerId;
+    const payload: string = JSON.stringify(encryptionPayload);
+    const silent = options?.forcePushNotification ?? isSilentPayload(request);
+
+    this._transport.send(payload, topic, silent);
+
+    this._eventManager.trigger({
+      event: "call_request_sent",
+      params: [{ request, options }],
+    });
+    return this._subscribeToCallResponse(request.id);
   }
 
   public async signTransaction(tx: ITxData) {
