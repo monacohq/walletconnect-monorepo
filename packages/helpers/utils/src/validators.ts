@@ -62,11 +62,11 @@ export function isInternalEvent(object: any): object is IInternalEvent {
 }
 
 export function isReservedEvent(event: string) {
-  return reservedEvents.includes(event) || event.startsWith("wc_");
+  return reservedEvents.includes(event) || event.startsWith("dc_");
 }
 
 export function isSilentPayload(request: IJsonRpcRequest): boolean {
-  if (request.method.startsWith("wc_")) {
+  if (request.method.startsWith("dc_")) {
     return true;
   }
   if (signingMethods.includes(request.method)) {
