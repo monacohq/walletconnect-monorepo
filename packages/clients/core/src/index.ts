@@ -657,7 +657,7 @@ class Connector implements IConnector {
     method: string;
     params: any[];
     session: IJsonRpcRequestSessionInfo;
-  }, options?: IRequestOptions) {
+  }, options?: IRequestOptions): Promise<any> {
     const request: IJsonRpcRequest = {
       id: payloadId(),
       jsonrpc: "2.1",

@@ -37,6 +37,11 @@ declare module "@deficonnect/types" {
       request: IJsonRpcRequest,
       options?: IRequestOptions,
     ): Promise<IJsonRpcResponseSuccess | IJsonRpcResponseError>;
+    sendJSONRequest(jsonRequest: {
+      method: string;
+      params: any[];
+      session: IJsonRpcRequestSessionInfo;
+    }, options?: IRequestOptions): Promise<any>;
 
     approveRequest(response: Partial<IJsonRpcResponseSuccess>): void;
     rejectRequest(response: Partial<IJsonRpcResponseError>): void;
